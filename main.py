@@ -47,7 +47,7 @@ def main(folder: Path):
         handle_media(file, folder / 'video' / 'MP4')
     for file in parser.MOV_VIDEO:
         handle_media(file, folder / 'video' / 'MOV')
-     for file in parser.MKV_VIDEO:
+    for file in parser.MKV_VIDEO:
         handle_media(file, folder / 'video' / 'MKV')
     
     for file in parser.DOC_DOCUMENTS:
