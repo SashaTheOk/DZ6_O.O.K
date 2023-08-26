@@ -73,14 +73,14 @@ def main(folder: Path):
         handle_media(file, folder / 'audio' / 'AMR')
 
     for file in parser.ZIP_ARCHIVES:
-        handle_media(file, folder / 'archives'/ 'ZIP')
+        handle_archive(file, folder / 'archives'/ 'ZIP')
     for file in parser.GZ_ARCHIVES:
-        handle_media(file, folder / 'archives'/ 'GZ')
+        handle_archive(file, folder / 'archives'/ 'GZ')
     for file in parser.TAR_ARCHIVES:
-        handle_media(file, folder / 'archives'/ 'TAR')
+        handle_archive(file, folder / 'archives'/ 'TAR')
 
     for file in parser.MY_OTHER:
-        handle_media(file, folder / 'MY_OTHER')
+        handle_other(file, folder / 'MY_OTHER')
     
 
     for folder in parser.FOLDERS[::-1]:
